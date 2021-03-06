@@ -13,11 +13,31 @@
       href="./favicon/favicon.ico"
       type="image/x-icon"
     />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="nav" id="nav">
-      <h3>Weather app</h3>
+      <div class="logo-container">
+        <img src="logo/logo-via-logohub.png" alt="" class="logo" />
+      </div>
     </nav>
+    <section class="hero-section" id="hero-section">
+      <h1>Enter your City name here:</h1>
+      <div class="search-city-container">
+        <input
+          type="search"
+          name="Search"
+          placeholder="City"
+          id="search-city"
+        />
+        <button class="search-btn" id="search-btn">Search</button>
+      </div>
+    </section>
     <!-- js -->
     <script src="app.js"></script>
   </body>

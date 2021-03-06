@@ -2,5 +2,69 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Philosopher", sans-serif;
 }
 /* color:#209CEE */
+
+.logo-container {
+  display: grid;
+  /* place-items: center; */
+  width: 100%;
+  padding: 1rem;
+}
+.logo {
+  max-width: 40%;
+  max-height: 4rem;
+}
+.nav {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background: #7cc0ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 6rem;
+}
+.hero-section {
+  margin-top: 8rem;
+  padding: 1rem;
+}
+.hero-section h1 {
+  color: #209cee;
+  letter-spacing: 2px;
+}
+#search-city {
+  background: #209cee;
+  border-radius: 1rem;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+#search-city::placeholder {
+  color: white;
+  letter-spacing: 2px;
+}
+#search-city:focus {
+  outline: none;
+}
+.search-btn {
+  color: white;
+  letter-spacing: 2px;
+  background: #7cc0ff;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 3rem;
+}
+.search-btn:hover {
+  background: #209cee;
+  cursor: pointer;
+  color: rgb(68, 15, 15);
+}
+.search-btn:focus {
+  outline: none;
+}
+.search-city-container {
+  margin-top: 2rem;
+}
