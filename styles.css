@@ -14,7 +14,7 @@
 }
 .logo {
   max-width: 40%;
-  max-height: 4rem;
+  max-height: 3rem;
 }
 .nav {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -26,8 +26,9 @@
   max-height: 6rem;
 }
 .hero-section {
-  margin-top: 8rem;
+  margin-top: 6rem;
   padding: 1rem;
+  /* display: none; */
 }
 .hero-section h1 {
   color: #209cee;
@@ -67,4 +68,16 @@
 }
 .search-city-container {
   margin-top: 2rem;
+}
+.loading-section {
+  display: grid;
+  gap: 0;
+  grid-template-columns: 1fr;
+  margin-top: 6rem;
+  display: none;
+}
+.loading-section h1 {
+  padding: 1rem;
+  color: #209cee;
+  letter-spacing: 2px;
 }
