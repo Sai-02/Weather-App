@@ -1,17 +1,28 @@
+const heroSection = document.getElementById("hero-section");
+const loadingSection = document.getElementById("loading-section");
+const errorSection = document.getElementById("error-section");
 // Requesting from api
 const key = "41d0b3521b5079d62f148acc876fe96b";
 let searchBtn = document.getElementById("search-btn");
 
 searchBtn.addEventListener("click", showWeather);
 async function showWeather() {
+  heroSection.style.display = "none";
+  loadingSection.style.display = "grid";
   let cityName = document.getElementById("search-city").value;
-  let responseText = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${key}`
-  );
+  try {
+    let responseText = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${key}`
+    );
 
-  let response = await responseText.json();
-  //   console.log(response.weather[0].icon);
-  populateDOM(response);
+    let response = await responseText.json();
+
+    loadingSection.style.display = "none";
+    populateDOM(response);
+  } catch (e) {
+    errorSection.style.display = "grid";
+    console.log(e);
+  }
 }
 function populateDOM(response) {
   let html = `

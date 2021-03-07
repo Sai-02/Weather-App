@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Philosopher", sans-serif;
+  user-select: none;
 }
 /* color:#209CEE */
 
@@ -155,5 +156,22 @@ Response Section
   margin-top: 0;
 }
 .value {
-  color:rgba(0, 0,0, 0.7);
+  color: rgba(0, 0, 0, 0.7);
+}
+/* 
+=====================================
+
+Error Section
+
+====================================
+*/
+
+.error-section {
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+  display: none;
+}
+.error-img {
+  max-width: 100%;
 }
