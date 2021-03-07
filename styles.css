@@ -45,7 +45,7 @@ Hero section
 .hero-section {
   margin-top: 6rem;
   padding: 1rem;
-  display: none;
+  /* display: none; */
 }
 .hero-section h1 {
   color: #209cee;
