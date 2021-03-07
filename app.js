@@ -1,10 +1,10 @@
 const heroSection = document.getElementById("hero-section");
 const loadingSection = document.getElementById("loading-section");
 const errorSection = document.getElementById("error-section");
-// Requesting from api
 const key = "41d0b3521b5079d62f148acc876fe96b";
 let searchBtn = document.getElementById("search-btn");
 
+// Requesting from api
 searchBtn.addEventListener("click", showWeather);
 async function showWeather() {
   heroSection.style.display = "none";
@@ -24,6 +24,8 @@ async function showWeather() {
     console.log(e);
   }
 }
+
+// populate on DOM
 function populateDOM(response) {
   let html = `
     <div class="response-section-center">
