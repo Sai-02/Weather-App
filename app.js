@@ -6,7 +6,7 @@ searchBtn.addEventListener("click", showWeather);
 async function showWeather() {
   let cityName = document.getElementById("search-city").value;
   let responseText = await fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${key}`
+    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${key}`
   );
 
   let response = await responseText.json();
