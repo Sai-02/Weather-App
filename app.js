@@ -21,7 +21,7 @@ function populateDOM(response) {
     <div class="weather-description">
       ${response.weather[0].main}
     </div>
-    <img src="http://openweathermap.org/img/w/${response.weather[0].icon}.png" alt="" class="weather-image">
+    <img src="https://openweathermap.org/img/w/${response.weather[0].icon}.png" alt="" class="weather-image">
     <p class="weather-report" id="weather-report">
       
       <h4> <span class="propery">Current temperature:      </span><span class="value"> ${response.main.temp} F</span></h4>
